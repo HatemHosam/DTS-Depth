@@ -26,13 +26,13 @@ def main(argv):
     dataset = argv[0]
     if dataset == 'KITTI':
         shape = (224,608,3)
-        weights_path = 'weights/KITTI_Weights.h5'
+        weights_path = 'KITTI_Weights.h5'
     elif dataset == 'Cityscapes':
         shape = (512,1024,3)
-        weights_path = 'weights/Cityscapes_Weights.h5'
+        weights_path = 'Cityscapes_Weights.h5'
     elif dataset == 'NYUV2':
         shape = (480,640,3)
-        weights_path = 'weights/NYUV2_Weights.h5'
+        weights_path = 'NYUV2_Weights.h5'
     else:
         print('invalid weights name')
     

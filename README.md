@@ -18,4 +18,4 @@ In order to evaluate on a testset, you should run evaluate.py with the following
 python test.py [dataset_name] [path_to_testset_images_paths.txt]<br/>
 
 example:<br/>
-python evaluate.py KITTI KITTI_testset_names.txt<br/>
+python evaluate.py KITTI testset_names.txt<br/>

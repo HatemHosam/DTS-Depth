@@ -8,13 +8,13 @@ def main(argv):
     #select the weight file (KITTI, Cityscapes, or NYUV2)
     if argv[0] == 'KITTI':
         shape = (224,608,3)
-        weights_path = 'weights/KITTI_Weights.h5'
+        weights_path = 'KITTI_Weights.h5'
     elif argv[0] == 'Cityscapes':
         shape = (512,1024,3)
-        weights_path = 'weights/Cityscapes_Weights.h5'
+        weights_path = 'Cityscapes_Weights.h5'
     elif argv[0] == 'NYUV2':
         shape = (480,640,3)
-        weights_path = 'weights/NYUV2_Weights.h5'
+        weights_path = 'NYUV2_Weights.h5'
     else:
         print('invalid weights name')
     

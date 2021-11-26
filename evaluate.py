@@ -83,9 +83,15 @@ def main(argv):
         print(now - start)  #show processing time
         pred = pred[0,:,:,0]
         #exclude the invalid depth values in evaluation
-        mask = np.logical_and(pred, gt)
-        #append the error value
-        errors.append(compute_errors(gt[mask], pred[mask]))
+        if dataset == 'Cityscapes' or dataset == 'NYUV2':
+            mask = np.logical_and(pred, gt)
+            #append the error value
+            errors.append(compute_errors(gt[mask], pred[mask]))
+        else:
+            ind = np.where(depth_png == 0)
+            gt[gt == 0] = 1
+            pred[ind] = 1
+            errors.append(compute_errors(gt, pred))
     
     mean_errors = np.array(errors).mean(0)  
     print(mean_errors)

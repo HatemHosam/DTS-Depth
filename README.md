@@ -19,3 +19,5 @@ python test.py [dataset_name] [path_to_testset_images_paths.txt]<br/>
 
 example:<br/>
 python evaluate.py KITTI testset_names.txt<br/>
+
+Note: the ground truth depth were extracted from the .mat file and saved in .npy format for easier and faster loading during training of the models.

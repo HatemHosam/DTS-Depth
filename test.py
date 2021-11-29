@@ -18,7 +18,7 @@ def main(argv):
     else:
         print('invalid weights name')
     
-    #load DTS-Depth model with the selected pretrained weights
+    ##load DTS-Depth model with the selected pretrained weights
     model = DTS-model(shape)
     model.load_Weights(weights_path)
     #read test image

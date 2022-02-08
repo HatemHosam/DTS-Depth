@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 import sys
-from DTS-Depth_model import DTS-model
+from DTS_Depth_model import DTS-model
 
 def main(argv):
     #select the weight file (KITTI, Cityscapes, or NYUV2)
@@ -19,7 +19,7 @@ def main(argv):
         print('invalid weights name')
     
     ##load DTS-Depth model with the selected pretrained weights
-    model = DTS-model(shape)
+    model = DTS_model(shape)
     model.load_Weights(weights_path)
     #read test image
     img_path = argv[1]

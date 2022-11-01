@@ -23,4 +23,5 @@ python evaluate.py KITTI testset_names.txt<br/>
 Note: the ground truth depth were extracted from the .mat file and saved in .npy format for easier and faster loading during training of the models.
 
 If you use this code, please cite this paper:
+
 H. Ibrahem, A. Salem, and H.-S. Kang, “DTS-Depth: Real-Time Single-Image Depth Estimation Using Depth-to-Space Image Construction,” Sensors, vol. 22, no. 5, p. 1914, Mar. 2022, doi: 10.3390/s22051914.

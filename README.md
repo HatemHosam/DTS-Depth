@@ -1,10 +1,15 @@
 # DTS-Depth
+
+This is the official implementation of DTS-Depth: Real-Time Single-Image Depth Estimation Using Depth-to-Space Image Construction [paper](https://www.mdpi.com/1424-8220/22/5/1914)
+
+![DTS_fig](DTS_fig.png)
+
 requirements:<br/>
 tensorflow == '2.3.1'<br/>
 opencv-python == '4.4.0'<br/>
 numpy == '1.18.5'<br/>
 
-In order to run the the test.py, you have to run the code with the following command line:<br/>
+In order to run the test.py, you have to run the code with the following command line:<br/>
 
 python test.py [dataset_name] [path_to_image]<br/>
 
